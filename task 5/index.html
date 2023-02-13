@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 5</title>
+</head>
+<body>
+    <h1>Задание 5</h1>
+    <p>Написать код приложения, интерфейс которого состоит из двух input и кнопки. В input можно ввести любое число.</p>
+    <ul>
+        <li>Заголовок первого input — «номер страницы».</li>
+        <li>Заголовок второго input — «лимит».</li>
+        <li>Заголовок кнопки — «запрос»</li>
+    </ul>
+    <p>При клике на кнопку происходит следующее:</p>
+    <ul>
+        <li>Если число в первом input не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст «Номер страницы вне диапазона от 1 до 10»;</li>
+        <li>Если число во втором input не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст «Лимит вне диапазона от 1 до 10»;</li>
+        <li>Если и первый, и второй input не в диапазонах или не являются числами — выводить ниже текст «Номер страницы и лимит вне диапазона от 1 до 10»;</li>
+        <li>Если числа попадают в диапазон от 1 до 10 — сделать запрос по URL <a target="_blank" href="https://picsum.photos/v2/list?page=1&limit=10">https://picsum.photos/v2/list?page=1&limit=10</a>, где GET-параметр page — это число из первого input, а GET-параметр limit — это введённое число второго input.</li>
+    </ul>
+    <p>После получения данных вывести список картинок на экран.</p>
+    <p>Если пользователь перезагрузил страницу, то ему должны показываться картинки из последнего успешно выполненного запроса (использовать localStorage).</p> 
+    <p>Удачи!</p>
+    <h2>Решение</h2>
+    <form action="#">
+    <label for="formOne">Номер страницы:</label>
+    <input class="inp" id="formOne" type="number">
+    <label for="formTwo">Лимит:</label>
+    <input class="inp" id="formTwo" type="number">
+    <input class="btn" type="submit" value="Запрос">
+    </form>
+    <p class="result">Результат:</p>    
+</body>
+<script src="script.js"></script>
+</html>

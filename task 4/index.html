@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task 3</title>
+</head>
+<body>
+    <h1>Задание 4</h1>
+    <p>Напишите код приложения, интерфейс которого представляет собой 2 input и кнопку submit. В input можно ввести любое число.</p>
+    <p>При клике на кнопку происходит следующее:</p>
+    <ul>
+        <li>Если оба числа не попадают в диапазон от 100 до 300 или введено не число — выводить ниже текст «одно из чисел вне диапазона от 100 до 300»;</li>
+        <li>Если числа попадают в диапазон от 100 до 300 — сделать запрос c помощью fetch по URL <a href=" https://picsum.photos/200/300" target="_blank"> https://picsum.photos/200/300</a>, где первое число — ширина картинки, второе — высота.</li>
+    </ul>
+    </p>
+    <h2>Решение</h2>
+    <form action="#">
+    <label for="form">Введите число:</label>
+    <p>
+    <input class="inp" id="formOne" type="number">
+    <input class="inp" id="formTwo" type="number">
+    <input class="btn" type="submit" value="Отправить">
+    </form>
+    </p>
+    <p class="result">Результат:</p>    
+</body>
+<script src="script.js"></script>
+</html>
